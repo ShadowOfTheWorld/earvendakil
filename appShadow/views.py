@@ -10,7 +10,7 @@ def index(request):
     def start(bot, update):
         bot.sendMessage(chat_id=update.message.shat_id, text="Приветствую, Ням!")
 
-    update = Updater(token='747350126:AAFSlYXgWRmJ9HowkXvVBpxsA_ZgPSpxvMU')
+    updater = Updater(token='747350126:AAFSlYXgWRmJ9HowkXvVBpxsA_ZgPSpxvMU')
     
     start_handler = CommandHandler('start', start)
 
